@@ -24,8 +24,12 @@ def create_course(request):
 def enroll_course(request, course_id):
     if request.method == "POST":
         course = get_object_or_404(Course, id=course_id)
-        # El usuario actual que está inscrito
-        user = request.user
+
+        # El usuario autenticado se obtiene de la sesión (modelo propio users.User).
+        user_id = request.session.get("user_id")
+        if not user_id:
+            return redirect("login")
+        user = get_object_or_404(User, id=user_id)
 
         # Verifica si ya está inscrito
         if Inscription.objects.filter(user=user, course=course).exists():

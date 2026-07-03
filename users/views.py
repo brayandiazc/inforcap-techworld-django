@@ -39,6 +39,8 @@ def login_view(request):
         try:
             user = User.objects.get(username=username)
             if check_password(password, user.password):
+                # Guardamos el usuario autenticado en la sesión.
+                request.session["user_id"] = user.id
                 return redirect("home")  # Página de inicio
             else:
                 return render(
