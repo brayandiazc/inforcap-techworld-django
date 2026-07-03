@@ -125,8 +125,8 @@ Sigue estas instrucciones para obtener una copia funcional del proyecto en tu m�
 1. **Clonar el repositorio:**
 
 ```bash
-git clone https://github.com/tu-repositorio/techworld.git
-cd techworld
+git clone https://github.com/brayandiazc/inforcap-techworld-django.git
+cd inforcap-techworld-django
 ```
 
 2. **Crear un entorno virtual:**
@@ -220,10 +220,30 @@ Accede a `http://127.0.0.1:8000`.
 - **Base de Datos:**
   - PostgreSQL
 
+## Documentación 📚
+
+La documentación del proyecto vive en la carpeta [`docs/`](docs/):
+
+- **Arquitectura:** [`docs/architecture/`](docs/architecture/) — stack, arquitectura, modelo de datos, autenticación, contrato de vistas y diseño.
+- **Producto:** [`docs/product/`](docs/product/) — modelo (educativo) y roadmap.
+- **Convenciones:** [`docs/conventions/`](docs/conventions/) — reglas reusables de base de datos, testing, secretos, deploy, etc.
+- **Decisiones (ADR):** [`docs/decisions/`](docs/decisions/) — registro de decisiones arquitectónicas.
+- **Glosario:** [`docs/glossary.md`](docs/glossary.md).
+
+## Contribuir 🤝
+
+- Lee la [guía de contribución](CONTRIBUTING.md) y el [código de conducta](CODE_OF_CONDUCT.md).
+- Para reportar vulnerabilidades, consulta la [política de seguridad](SECURITY.md).
+- Los cambios notables se registran en el [CHANGELOG](CHANGELOG.md).
+
 ## Versionado 📌
 
-Usamos [Git](https://git-scm.com) para el versionado. Ve las [etiquetas](https://github.com/your/project/tags) disponibles.
+Usamos [Git](https://git-scm.com) y [Semantic Versioning](https://semver.org/lang/es/) para el versionado. Ve las [etiquetas](https://github.com/brayandiazc/inforcap-techworld-django/tags) y los [releases](https://github.com/brayandiazc/inforcap-techworld-django/releases) disponibles.
 
 ## Autores ✒️
 
-- **[Brayan Diaz C]** - _Desarrollador principal_ - [GitHub](https://github.com/brayandiazc)
+- **Brayan Diaz C** - _Desarrollador principal_ - [GitHub](https://github.com/brayandiazc)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
